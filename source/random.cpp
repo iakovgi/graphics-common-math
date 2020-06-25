@@ -3,6 +3,8 @@
 #include <random>
 #include <chrono>
 
+namespace graphics::math{
+
 Random::Random(std::uint32_t seed):
     m_engine{},
     m_distribution{}
@@ -20,3 +22,5 @@ double Random::getUniform() noexcept
 {
     return m_distribution(m_engine);
 }
+
+} // namespace graphics::math
