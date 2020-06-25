@@ -1,6 +1,13 @@
-cmake_minimum_required(VERSION 3.15)
-project(graphics_common_math)
+set(OLD_SUBMODULE ${SUBMODULE})
+set(SUBMODULE GRAPHICS_COMMON_MATH)
 
-set(CMAKE_CXX_STANDARD 17)
+file(GLOB ${SUBMODULE}_SOURCE
+    ${CMAKE_CURRENT_LIST_DIR}/source/*)
 
-add_executable(graphics_common_math main.cpp)
+file(GLOB ${SUBMODULE}_HEADERS
+    ${CMAKE_CURRENT_LIST_DIR}/include/*)
+
+set(${SUBMODULE}_FILES ${${SUBMODULE}_SOURCE} ${${SUBMODULE}_HEADERS})
+set(${SUBMODULE}_INCLUDE ${CMAKE_CURRENT_LIST_DIR}/include)
+
+set(SUBMODULE ${OLD_SUBMODULE})
