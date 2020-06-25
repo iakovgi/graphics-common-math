@@ -1,7 +1,7 @@
 #ifndef GRAPHICS_COMMON_MATH_NORM_H__
 #define GRAPHICS_COMMON_MATH_NORM_H__
 
-namespace graphics{ namespace math{
+namespace graphics::math{
 
 #define $declare_operator_binary_vec(N, op)                                                                     \
     vec##N##_t<RealType> operator op(const norm##N##_t &rhs) const noexcept;                                    \
@@ -152,7 +152,6 @@ union norm4_t
 
 #undef $declare_operator_binary_vec
 
-} // namespace math
-} // namespace graphics
+} // namespace graphics::math
 
 #endif // GRAPHICS_COMMON_MATH_NORM_H__

@@ -1,7 +1,7 @@
 #ifndef GRAPHICS_COMMON_MATH_RAY_H__
 #define GRAPHICS_COMMON_MATH_RAY_H__
 
-namespace graphics{ namespace math{
+namespace graphics::math{
 
 template <typename RealType>
 union vec3_t;
@@ -19,7 +19,6 @@ struct ray_t
     static ray_t fromTwoPoints(const vec3_t<RealType> &from, const vec3_t<RealType> &to) noexcept;
 };
 
-} // namespace math
-} // namespace graphics
+} // namespace graphics::math
 
 #endif // GRAPHICS_COMMON_MATH_RAY_H__

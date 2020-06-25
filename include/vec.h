@@ -1,7 +1,7 @@
 #ifndef GRAPHICS_COMMON_MATH_VEC_H__
 #define GRAPHICS_COMMON_MATH_VEC_H__
 
-namespace graphics{ namespace math{
+namespace graphics::math{
 
 template <typename RealType>
 union norm2_t;
@@ -148,7 +148,6 @@ union vec4_t
     const RealType &operator[](int idx) const noexcept;
 };
 
-} // namespace math
-} // namespace graphics
+} // namespace graphics::math
 
 #endif // GRAPHICS_COMMON_MATH_VEC_H__

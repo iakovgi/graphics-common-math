@@ -3,7 +3,7 @@
 
 #include <random>
 
-namespace graphics{ namespace math{
+namespace graphics::math{
 
 class Random
 {
@@ -23,7 +23,6 @@ private:
     std::uniform_real_distribution<double> m_distribution;
 };
 
-} // namespace math
-} // namespace graphics
+} // namespace graphics::math
 
 #endif // GRAPHICS_COMMON_MATH_RANDOM_HPP__
