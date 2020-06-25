@@ -9,7 +9,7 @@ union vec3_t;
 template <typename RealType>
 union norm3_t;
 
-template <typename RealType>
+template <typename RealType = double>
 struct ray_t
 {
     vec3_t<RealType> origin;
