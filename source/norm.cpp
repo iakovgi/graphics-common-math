@@ -7,8 +7,8 @@ namespace graphics::math{
 template <typename RealType>
 norm2_t<RealType>::norm2_t(const RealType x,
                            const RealType y) noexcept:
-        x{ x },
-        y{ y }
+    x{ x },
+    y{ y }
 {}
 template norm2_t<float>::norm2_t(const float x, const float y) noexcept;
 template norm2_t<double>::norm2_t(const double x, const double y) noexcept;
@@ -17,9 +17,9 @@ template <typename RealType>
 norm3_t<RealType>::norm3_t(const RealType x,
                            const RealType y,
                            const RealType z) noexcept:
-        x{ x },
-        y{ y },
-        z{ z }
+    x{ x },
+    y{ y },
+    z{ z }
 {}
 template norm3_t<float>::norm3_t(const float x, const float y, const float z) noexcept;
 template norm3_t<double>::norm3_t(const double x, const double y, const double z) noexcept;
@@ -29,10 +29,10 @@ norm4_t<RealType>::norm4_t(const RealType x,
                            const RealType y,
                            const RealType z,
                            const RealType w) noexcept:
-        x{ x },
-        y{ y },
-        z{ z },
-        w{ w }
+    x{ x },
+    y{ y },
+    z{ z },
+    w{ w }
 {}
 template norm4_t<float>::norm4_t(const float x, const float y, const float z, const float w) noexcept;
 template norm4_t<double>::norm4_t(const double x, const double y, const double z, const double w) noexcept;

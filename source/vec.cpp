@@ -9,8 +9,8 @@ namespace graphics::math{
 template <typename RealType>
 vec2_t<RealType>::vec2_t(const RealType x,
                          const RealType y) noexcept:
-     x{ x },
-     y{ y }
+    x{ x },
+    y{ y }
 {}
 template vec2_t<float>::vec2_t(const float x, const float y) noexcept;
 template vec2_t<double>::vec2_t(const double x, const double y) noexcept;
@@ -19,9 +19,9 @@ template <typename RealType>
 vec3_t<RealType>::vec3_t(const RealType x,
                          const RealType y,
                          const RealType z) noexcept:
-        x{ x },
-        y{ y },
-        z{ z }
+    x{ x },
+    y{ y },
+    z{ z }
 {}
 template vec3_t<float>::vec3_t(const float x, const float y, const float z) noexcept;
 template vec3_t<double>::vec3_t(const double x, const double y, const double z) noexcept;
@@ -31,10 +31,10 @@ vec4_t<RealType>::vec4_t(const RealType x,
                          const RealType y,
                          const RealType z,
                          const RealType w) noexcept:
-        x{ x },
-        y{ y },
-        z{ z },
-        w{ w }
+    x{ x },
+    y{ y },
+    z{ z },
+    w{ w }
 {}
 template vec4_t<float>::vec4_t(const float x, const float y, const float z, const float w) noexcept;
 template vec4_t<double>::vec4_t(const double x, const double y, const double z, const double w) noexcept;

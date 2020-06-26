@@ -80,7 +80,7 @@ std::optional<typename Primitive<RealType>::intersection_t>
     const auto p1 = result.position - v0;
     const auto v12 = v2 - v1;
     const auto posDir = normal;
-    const auto m = (v2 - v0).cross(p1).dot(posDir);
+    const auto m = (v1 - v0).cross(p1).dot(posDir);
     const auto n = p1.cross(v2 - v0).dot(posDir);
     const auto k = v12.cross(result.position - v1).dot(posDir);
     if(m <= 0.0 || n <= 0.0 || k <= 0.0) {
