@@ -15,7 +15,7 @@ struct ray_t
     vec3_t<RealType> origin;
     norm3_t<RealType> direction;
 
-    ray_t(const vec3_t<RealType>& origin, const norm3_t<RealType>& direction) noexcept;
+    ray_t(const vec3_t<RealType> &origin, const norm3_t<RealType> &direction) noexcept;
     static ray_t fromTwoPoints(const vec3_t<RealType> &from, const vec3_t<RealType> &to) noexcept;
 };
 
